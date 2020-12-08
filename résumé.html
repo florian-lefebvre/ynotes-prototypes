@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #hidescroll::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col h-screen items-center justify-center text-gray-300">
+    <div style="width: 300px; height: 575px" class="bg-gray-600 flex flex-col">
+        <div class="bg-gray-800 p-3 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="h-5 w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <div class="font-semibold uppercase ml-3">Résumé</div>
+        </div>
+        <div class="overflow-auto p-3">
+            <div class="font-medium mb-4">
+                <h2 class="uppercase">Travail fait</h2>
+                <div class="flex items-center">
+                    <span class="h-2 w-2/3 bg-gray-700 rounded-full relative shadow">
+                        <span class="h-2 w-1/2 bg-green-500 rounded-full absolute top-0 left-0"></span>
+                    </span>
+                    <div class="ml-2">50%</div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h2 class="font-medium uppercase">Dernières notes</h2>
+                <div class="flex overflow-x-auto" id="hidescroll">
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex items-center shadow flex-none mr-4">
+                        <div
+                            class="bg-gray-200 text-gray-700 rounded-full h-10 w-10 text-center pt-2 mr-2 shadow font-semibold">
+                            18,5</div>
+                        <div class="text-sm">
+                            <div>HG EMC <span class="text-xs">- Ven. 13 Nov.</span></div>
+                            <div>Lorem ipsum</div>
+                        </div>
+                    </div>
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex items-center shadow flex-none mr-4">
+                        <div
+                            class="bg-gray-200 text-gray-700 rounded-full h-10 w-10 text-center pt-2 mr-2 shadow font-semibold">
+                            14,5</div>
+                        <div class="text-sm">
+                            <div>ANGLAIS <span class="text-xs">- Ven. 13 Nov.</span></div>
+                            <div>Lorem ipsum</div>
+                        </div>
+                    </div>
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex items-center shadow flex-none mr-4">
+                        <div
+                            class="bg-gray-200 text-gray-700 rounded-full h-10 w-10 text-center pt-2 mr-2 shadow font-semibold">
+                            20</div>
+                        <div class="text-sm">
+                            <div>ESPAGNOL <span class="text-xs">- Ven. 13 Nov.</span></div>
+                            <div>Lorem ipsum</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="font-medium uppercase">A faire</h2>
+                <div>
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex justify-between items-center shadow">
+                        <div>
+                            <div class="text-xs">Ven. 13 Nov.</div>
+                            <div>Lorem ipsum</div>
+                        </div>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></span>
+                    </div>
+                    <div class="py-2 px-2 mb-1 bg-gray-700 rounded shadow">
+                        <div class="flex justify-between items-center mb-3">
+                            <div>
+                                <div class="text-xs">Ven. 13 Nov.</div>
+                                <div>Lorem ipsum</div>
+                            </div>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 15l7-7 7 7" />
+                                </svg></span>
+                        </div>
+                        <div class="text-justify text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                            optio suscipit nihil, at
+                            voluptate pariatur dignissimos molestiae sed culpa. Error!</div>
+                    </div>
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex justify-between items-center shadow">
+                        <div>
+                            <div class="text-xs">Ven. 13 Nov.</div>
+                            <div>Lorem ipsum</div>
+                        </div>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></span>
+                    </div>
+
+                    <div class="py-1 px-2 mb-1 bg-blue-800 rounded flex justify-between items-center shadow">
+                        <span>View more</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
