@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé</title>
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        #hidescroll::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col h-screen items-center justify-center text-gray-100 bg-gray-900">
+    <div style="width: 300px; height: 575px" class="bg-gray-800 flex flex-col shadow-2xl">
+        <div class="bg-gray-600 p-3 flex items-center">
+            <span class="material-icons">
+                menu
+            </span>
+            <div class="font-semibold uppercase ml-3 text-lg">Résumé</div>
+            <span class="material-icons ml-auto">
+                more_vert
+            </span>
+        </div>
+        <div class="overflow-auto p-3">
+            <div class="my-4">
+                <h2 class="uppercase font-medium">Prochaine heure</h2>
+                <div class="py-2 px-2 my-1 bg-gray-700 rounded flex items-center shadow flex-none">
+                    <div
+                        class="bg-gray-200 text-gray-700 rounded-full h-12 w-12 flex items-center justify-center mr-4 shadow font-semibold">
+                        10h00</div>
+                    <div>
+                        <div class="text-sm">ANGLAIS LVA</div>
+                        <div class="font-semibold">Salle 48</div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-4">
+                <div class="flex justify-between mb-1 items-center">
+                    <h2 class="font-medium uppercase">Dernières notes</h2>
+                    <div class="bg-gray-700 px-1 rounded shadow">Tout voir
+                    </div>
+                </div>
+                <div class="flex overflow-x-auto" id="hidescroll">
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex items-center shadow flex-none mr-4 w-10/12">
+                        <div
+                            class="bg-gray-200 text-gray-700 rounded-full h-10 w-10 text-center pt-2 mr-2 shadow font-semibold">
+                            18,5</div>
+                        <div class="text-sm">
+                            <div>Ta mise en page mais</div>
+                            <div>width = 80%</div>
+                        </div>
+                    </div>
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex items-center shadow flex-none mr-4 w-10/12">
+                        <div
+                            class="bg-gray-200 text-gray-700 rounded-full h-10 w-10 text-center pt-2 mr-2 shadow font-semibold">
+                            14,5</div>
+                        <div class="text-sm">
+                            <div>ANGLAIS <span class="text-xs">- Ven. 13 Nov.</span></div>
+                            <div>Lorem ipsum</div>
+                        </div>
+                    </div>
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex items-center shadow flex-none mr-4 w-10/12">
+                        <div
+                            class="bg-gray-200 text-gray-700 rounded-full h-10 w-10 text-center pt-2 mr-2 shadow font-semibold">
+                            20</div>
+                        <div class="text-sm">
+                            <div>ESPAGNOL <span class="text-xs">- Ven. 13 Nov.</span></div>
+                            <div>Lorem ipsum</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="font-medium my-4">
+                <h2 class="uppercase">Evolution</h2>
+                <div class="w-full h-16 bg-gradient-to-r from-blue-900 to-blue-700 rounded">
+                </div>
+            </div>
+            <div class="my-4">
+                <div class="flex justify-between mb-1 items-center">
+                    <h2 class="font-medium uppercase">Devoirs</h2>
+                    <div class="bg-gray-700 px-1 rounded shadow">Tout voir
+                    </div>
+                </div>
+                <div>
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex justify-between items-center shadow">
+                        <div>
+                            <div class="text-xs">Ven. 13 Nov.</div>
+                            <div>Lorem ipsum</div>
+                        </div>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></span>
+                    </div>
+                    <div class="py-2 px-2 mb-1 bg-gray-700 rounded shadow">
+                        <div class="flex justify-between items-center mb-3">
+                            <div>
+                                <div class="text-xs">Ven. 13 Nov.</div>
+                                <div>Lorem ipsum</div>
+                            </div>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 15l7-7 7 7" />
+                                </svg></span>
+                        </div>
+                        <div class="text-justify text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                            optio suscipit nihil, at
+                            voluptate pariatur dignissimos molestiae sed culpa. Error!</div>
+                    </div>
+                    <div class="py-1 px-2 mb-1 bg-gray-700 rounded flex justify-between items-center shadow">
+                        <div>
+                            <div class="text-xs">Ven. 13 Nov.</div>
+                            <div>Lorem ipsum</div>
+                        </div>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></span>
+                    </div>
+
+                    <div class="py-1 px-2 mb-1 bg-blue-800 rounded flex justify-between items-center shadow">
+                        <span>View more</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
